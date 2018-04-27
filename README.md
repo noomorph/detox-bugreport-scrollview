@@ -1,5 +1,15 @@
 # detox-bugreport-scrollview
 
+To run the project:
+
+```bash
+yarn
+yarn start # in the first terminal tab
+yarn test  # in the second terminal tab
+```
+
+**NOTE:** make sure that `Simulator > Hardware > Keyboard > Connect Hardware Keyboard` is disabled.
+
 Illustrates that `<ScrollView />` does not `.scrollTo('bottom')` when input is focused (there is an on-screen keyboard turned on).
 
 Look at the second test in suite here:
