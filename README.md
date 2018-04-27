@@ -1,6 +1,8 @@
 # detox-bugreport-scrollview
 
-To run the project:
+**Software**: MacOS Sierra 10.12.6, XCode 9.20, Node 8.11.1 LTS
+
+**Steps to run the project**:
 
 ```bash
 yarn
@@ -21,15 +23,17 @@ It should pass. Why not? The first one passes at least.
 Currently I get the error:
 
 ```json
+Error Trace: [
   {
     "Description" : "Multiple elements were matched: (
-    "<RCTCustomScrollView:0x7feea203aa00; AX=N; AX.frame={{0, 0}, {375, 667}}; AX.activationPoint={187.5, 333.5}; AX.traits='UIAccessibilityTraitNone'; AX.focused='N'; frame={{0, 0}, {375, 667}}; opaque; alpha=1>",
-    "<UIFieldEditor:0x7feea288e000; AX=N; AX.frame={{0, 35}, {375, 40}}; AX.activationPoint={187.5, 55}; AX.traits='UIAccessibilityTraitNone'; AX.focused='N'; frame={{0, 0}, {375, 40}}; alpha=1; text=''>"
+    "<RCTCustomScrollView:0x7ffda48c8000; AX=N; AX.frame={{0, 0}, {375, 667}}; AX.activationPoint={187.5, 333.5}; AX.traits='UIAccessibilityTraitNone'; AX.focused='N'; frame={{0, 0}, {375, 667}}; opaque; alpha=1>",
+    "<UIFieldEditor:0x7ffda7833000; AX=N; AX.frame={{1, 36}, {373, 38}}; AX.activationPoint={187.5, 55}; AX.traits='UIAccessibilityTraitNone'; AX.focused='N'; frame={{0, 0}, {373, 38}}; alpha=1; text=''>"
 ). Please use selection matchers to narrow the selection down to single element.",
-    "Domain" : "com.google.earlgrey.ElementInteractionErrorDomain",
-    "Code" : "5",
+    "Error Domain" : "com.google.earlgrey.ElementInteractionErrorDomain",
+    "Error Code" : "5",
     "File Name" : "GREYElementInteraction.m",
     "Function Name" : "-[GREYElementInteraction grey_errorForMultipleMatchingElements:withMatchedElementsIndexOutOfBounds:]",
-    "Line" : "910"
+    "Line" : "956"
   }
+]
 ```
